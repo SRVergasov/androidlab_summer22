@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ЛетняяПрактика22</string>
+    <string name="button_text">Посчитать что-то</string>
+    <string name="name">Имя</string>
+    <string name="age">Возраст</string>
+    <string name="height">Рост</string>
+    <string name="weight">Вес</string>
 </resources>
