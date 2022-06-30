@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
         button = findViewById(R.id.button)
         textView = findViewById(R.id.textView)
 
+        textView?.text = getString(R.string.hint)
+
         button?.setOnClickListener {
             val checker = ValidateChecker()
             val name = textName?.text.toString()

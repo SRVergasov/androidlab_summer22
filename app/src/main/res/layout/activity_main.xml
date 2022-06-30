@@ -15,7 +15,6 @@
         android:inputType="textPersonName"
         android:maxLength="@integer/max_len"
         android:minHeight="48dp"
-        android:text="@string/name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="parent"
