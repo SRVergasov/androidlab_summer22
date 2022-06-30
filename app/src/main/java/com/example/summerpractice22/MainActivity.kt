@@ -32,15 +32,22 @@ class MainActivity : AppCompatActivity() {
         button?.setOnClickListener {
             val checker = ValidateChecker()
             val name = textName?.text.toString()
-            val age = textAge?.text.toString().toInt()
-            val height = textHeight?.text.toString().toInt()
-            val weight = textWeight?.text.toString().toDouble()
+            var age = 0
+            var height = 0
+            var weight = 0.0
+            if (textAge?.text.toString() != "" && textHeight?.text.toString() != "" &&
+                textWeight?.text.toString() != ""
+            ) {
+                age = textAge?.text.toString().toInt()
+                height = textHeight?.text.toString().toInt()
+                weight = textWeight?.text.toString().toDouble()
+            }
             val inputCorrect = checker.check(name, age, height, weight)
 
             if (inputCorrect) {
                 val calc = Calculator()
                 val ans = calc.calculate(name, age, height, weight)
-                textView?.text = "Ответ: $ans"
+                textView?.text = "${getString(R.string.output)}: $ans"
             } else {
                 textView?.text = getString(R.string.error_input)
             }

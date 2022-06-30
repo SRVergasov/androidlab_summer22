@@ -10,12 +10,14 @@ class ValidateChecker {
     private val MAX_WEIGHT_VALUE = 249
     private val MAX_HEIGHT_VALUE = MAX_WEIGHT_VALUE
 
-    private fun validName(name: String = ""): Boolean = name.length > MIN_NAME_LEN
-    private fun validAge(age: Int = 0): Boolean =
+    private fun validName(name: String): Boolean = name.length > MIN_NAME_LEN
+    private fun validAge(age: Int): Boolean =
         age in MIN_VALUE..MAX_AGE_VALUE
-    private fun validHeight(height: Int = 0): Boolean =
+
+    private fun validHeight(height: Int): Boolean =
         height in MIN_VALUE..MAX_HEIGHT_VALUE
-    private fun validWeight(weight: Double = 0.0): Boolean =
+
+    private fun validWeight(weight: Double): Boolean =
         (weight - MIN_VALUE > EPS) && (weight - MAX_WEIGHT_VALUE < EPS)
 
     fun check(

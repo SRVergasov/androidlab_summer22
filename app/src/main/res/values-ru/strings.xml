@@ -7,4 +7,5 @@
     <string name="height">Рост</string>
     <string name="weight">Вес</string>
     <string name="error_input">Данные введены некорректно</string>
+    <string name="output">Ответ</string>
 </resources>
