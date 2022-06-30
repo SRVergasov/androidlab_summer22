@@ -6,4 +6,7 @@
     <string name="age">Возраст</string>
     <string name="height">Рост</string>
     <string name="weight">Вес</string>
+    <string name="error">Данные введены некорректно</string>
+
+    <integer name="max_len">50</integer>
 </resources>
