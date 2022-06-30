@@ -1,7 +1,5 @@
 package com.example.summerpractice22.validate
 
-import com.example.summerpractice22.R
-
 class ValidateChecker {
     private val EPS = 1e-7
     private val MIN_VALUE = 1

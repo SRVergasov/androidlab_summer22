@@ -29,16 +29,14 @@ class MainActivity : AppCompatActivity() {
         button = findViewById(R.id.button)
         textView = findViewById(R.id.textView)
 
-        textView?.text = getString(R.string.hint)
-
         button?.setOnClickListener {
             val checker = ValidateChecker()
             val name = textName?.text.toString()
             var age = 0
             var height = 0
             var weight = 0.0
-            if (textAge?.text.toString() != "" && textHeight?.text.toString() != "" &&
-                textWeight?.text.toString() != ""
+            if (textAge?.text.toString().isNotEmpty() && textHeight?.text.toString().isNotEmpty() &&
+                textWeight?.text.toString().isNotEmpty()
             ) {
                 age = textAge?.text.toString().toInt()
                 height = textHeight?.text.toString().toInt()

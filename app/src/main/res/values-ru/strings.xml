@@ -4,5 +4,8 @@
     <string name="button_text">Посчитать что-то</string>
     <string name="error_input">Данные введены некорректно</string>
     <string name="output">Ответ</string>
-    <string name="hint">подсказка: 1 - имя, 2 - возраст, 3 - рост, 4 - вес</string>
+    <string name="name">Имя</string>
+    <string name="age">Возраст</string>
+    <string name="height">Рост</string>
+    <string name="weight">Вес</string>
 </resources>
